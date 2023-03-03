@@ -1,3 +1,7 @@
+## 2023年更新
+* 修复页眉与正文对齐的问题，同时调整了合适的页边距
+* 将正文标题字体由加粗（\bfseries）修改为黑体
+
 ## FRB Template
 
 本模板原始版本来源于[此仓库](https://github.com/Somedaywilldo/Someday-XeLaTex-Template)，针对第三十二届赛制格式要求做出了多处适配与调整。
