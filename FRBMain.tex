@@ -57,6 +57,8 @@ BoldItalicFont = times-new-roman-bold-italic.ttf
 \setmonofont[Path=fonts/]{Courier New.ttf}
 \setCJKfamilyfont{hwzs}[Path=fonts/]{STKzhongsong.ttf}%使用STZhogsong华文中宋字体
 \newcommand{\zhongsong}{\CJKfamily{hwzs}}
+\setCJKfamilyfont{hwxw}[Path=fonts/]{STKxinwei.ttf} % XSP 2023/3/3:
+\newcommand{\xinwei}{\CJKfamily{hwxw}}              %  使用STZxinwei华文新魏字体.
 
 %********************第三方字体引入********************
 
@@ -80,6 +82,7 @@ BoldItalicFont = times-new-roman-bold-italic.ttf
 
 %********************页边距设置********************
 \geometry{left=3cm,right=2cm,top=2.5cm,bottom=2.5cm}
+\geometry{a4paper} % xsp 2023/3/7: 调整纸张大小为A4
 %页边距
 %********************页边距设置********************
 %********************
@@ -136,23 +139,26 @@ BoldItalicFont = times-new-roman-bold-italic.ttf
 
 
 %********************封面部分********************
-\includegraphics[scale=1]{include_picture/xiaohui.png}
+\leftline{\includegraphics[scale=1]{include_picture/xiaohui.png}} % XSP 2023/3/3: 取消校徽段首缩进
 %格式控制部分
-\par \  
-\par \ 
-\par \ 
+% \par \  
+% \par \
+% \par \
+\vspace{24pt}
 \begin{center}
-\includegraphics[scale=1]{include_picture/xiaoming.png}
+\includegraphics[height=2.25cm, width=12.78cm, scale=1]{include_picture/xiaoming.png}
 \end{center}
 %格式控制部分
+\vspace{12pt}
 
 \begin{spacing}{3}
-    \erhao
+    % \erhao
     \begin{center}
         \zhongsong\erhao{第三十二届“冯如杯”竞赛主赛道项目论文} %黑体这样调用，其余字体同理
         
-        \zhongsong{“冯如杯”竞赛主赛道项目是什么}
+        % \zhongsong{“冯如杯”竞赛主赛道项目是什么}
     \end{center}
+    \rightline{\xinwei\sanhao{——“冯如杯”竞赛主赛道项目是什么}} % XSP 2023/3/3: 副标题二号华文新魏居右
 \end{spacing}
 %格式控制部分
 % \par \ 
