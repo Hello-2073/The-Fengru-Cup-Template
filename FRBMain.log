@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.6)  7 MAR 2023 10:56
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.6)  8 MAR 2023 16:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -646,8 +646,7 @@ Package fontspec Info: Font family 'CourierNew.ttf(0)' created for font
 Package: xeCJK-listings 2020/02/18 v3.8.2 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count330
 \l__xeCJK_listings_flag_int=\count331
-)
-No file FRBMain.aux.
+) (./FRBMain.aux)
 \openout1 = `FRBMain.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
@@ -666,7 +665,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
 LaTeX Font Info:    ... okay on input line 90.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
 LaTeX Font Info:    ... okay on input line 90.
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 90.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -832,14 +831,21 @@ Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
 
 ] [1
 
-] [2]
-No file FRBMain.toc.
+] [2] (./FRBMain.toc)
 \tf@toc=\write3
 \openout3 = `FRBMain.toc'.
 
-[3
+ [3
 
 ]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 253.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 253.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 
 Package natbib Warning: Citation `Squeez' on page 1 undefined on input line 253.
 
@@ -852,14 +858,6 @@ Package natbib Warning: Citation `Xu_2017Squueze' on page 1 undefined on input l
 
 Package natbib Warning: Citation `Carlini_2016' on page 1 undefined on input line 253.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 258.
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 258.
- (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 14.45398pt.
@@ -895,16 +893,12 @@ No file FRBMain.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[4] (./FRBMain.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[4] (./FRBMain.aux) ) 
 Here is how much of TeX's memory you used:
- 15009 strings out of 479418
- 337205 string characters out of 5888106
- 632783 words of memory out of 5000000
- 32251 multiletter control sequences out of 15000+600000
+ 15056 strings out of 479418
+ 339416 string characters out of 5888106
+ 632945 words of memory out of 5000000
+ 32294 multiletter control sequences out of 15000+600000
  540261 words of font info for 103 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  56i,14n,70p,1151b,718s stack positions out of 5000i,500n,10000p,200000b,80000s
