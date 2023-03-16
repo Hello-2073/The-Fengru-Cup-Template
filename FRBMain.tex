@@ -329,19 +329,19 @@ Confucius said in an offhand way that those who know are better than those who a
 \caption{这是一个表注示例}
 \begin{tabular}{|l||c|c|c|c|c|c|}
 \hline
- {\textbf{攻击方法}}							&  黑/白盒攻击	&  定向/非定向 	& 特定/通用 	& 扰动范数 & 学习方式 		& 攻击强度  \\ \hline\hline
-L-BFGS~ 		&  White box		&  Targeted					& Image specific			& $\ell_{\infty}$ 	& One shot		& $***$	\\ \hline
-FGSM~		&  White box		&  Targeted					& Image specific			& $\ell_{\infty}$	& One shot		& $***$ \\ \hline
-BIM \& ILCM~&  White box		& Non targeted				& Image specific			& $\ell_{\infty}$	& Iterative		& $**$$**$ 	\\ \hline
-JSMA~		&  White box		& Targeted					& Image specific			& $\ell_{0}$	& Iterative			& $***$ 	\\ \hline
-One-pixel~	& Black box		& Non Targeted		& Image specific		& $\ell_0$		& Iterative	& $**$ \\ \hline
-C\&W attacks~ & White box	& Targeted	&	Image specific		&	$\ell_0, \ell_2, \ell_{\infty}$	&	Iterative & $*****$ \\ \hline
-DeepFool~ & White box	& Non targeted		& Image specific		& $\ell_2, \ell_{\infty}$	& Iterative	& $**$$**$ \\ \hline
-Uni. perturbations~ & White box	& Non targeted & Universal &	$\ell_2, \ell_{\infty}$ & Iterative & $*****$ \\ \hline
-UPSET~ & Black box	& Targeted		& Universal 	&  $\ell_{\infty}$ & Iterative & $**$$**$ \\ \hline
-ANGRI~ & Black box	& Targeted		& Image specific	& $\ell_{\infty}$ &	Iterative & $**$$**$ \\ \hline
-Houdini~ & Black box		& Targeted		& Image specific	& $\ell_2, \ell_{\infty}$ & Iterative & $**$$**$ \\ \hline
-ATNs~ & White box			& Targeted		& Image specific	& $\ell_{\infty}$ & Iterative & $**$$**$ \\ \hline
+ {\textbf{攻击方法}}  &  定向/非定向 	   & 特定/通用 	       & 扰动范数                         & 学习方式 		& 攻击强度  \\ \hline\hline
+L-BFGS~ 		          & Targeted				& Image specific		& $\ell_{\infty}$ 	              & One shot		& $***$	\\ \hline
+FGSM~		              & Targeted				& Image specific		& $\ell_{\infty}$	                & One shot		& $***$ \\ \hline
+BIM \& ILCM~          & Non targeted		& Image specific		& $\ell_{\infty}$	                & Iterative		& $**$$**$ 	\\ \hline
+JSMA~		              & Targeted				& Image specific		& $\ell_{0}$	                    & Iterative		& $***$ 	\\ \hline
+One-pixel~	          & Non Targeted		& Image specific		& $\ell_0$		                    & Iterative	  & $**$ \\ \hline
+C\&W attacks~         & Targeted	      &	Image specific		&	$\ell_0, \ell_2, \ell_{\infty}$	&	Iterative   & $*****$ \\ \hline
+DeepFool~             & Non targeted		& Image specific		& $\ell_2, \ell_{\infty}$	        & Iterative	  & $**$$**$ \\ \hline
+Uni. perturbations~   & Non targeted    & Universal         &	$\ell_2, \ell_{\infty}$         & Iterative   & $*****$ \\ \hline
+UPSET~                & Targeted		    & Universal 	      &  $\ell_{\infty}$                & Iterative   & $**$$**$ \\ \hline
+ANGRI~                & Targeted		    & Image specific	  & $\ell_{\infty}$                 &	Iterative   & $**$$**$ \\ \hline
+Houdini~              & Targeted		    & Image specific	  & $\ell_2, \ell_{\infty}$         & Iterative   & $**$$**$ \\ \hline
+ATNs~                 & Targeted		    & Image specific	  & $\ell_{\infty}$                 & Iterative   & $**$$**$ \\ \hline
 \end{tabular}
 \end{table*}
 
@@ -369,12 +369,40 @@ ATNs~ & White box			& Targeted		& Image specific	& $\ell_{\infty}$ & Iterative &
 
 \end{spacing}
 
-\begingroup
-\setstretch{2.0}    %行距2
-\setlength{\bibsep}{0pt}    %段前段后0
-\begin{adjustwidth}{0.42cm}{0.42cm} %左右缩进0.42cm
-\bibliography{references}
-\end{adjustwidth}
-\endgroup
+\newpage
+
+% XSP 2023/3/16: bib支持不全，暂时改为手动
+\section*{参考文献}
+% 著作: [序号]作者．书名[标识码]．出版地：出版社，出版年．
+[1]张志建．严复思想研究[M]．桂林：广西师范大学出版社，1989． 
+
+% 译著: [序号]国名或地区（用圆括号）原作者．书名[标识码]．译者．出版地：出版社，出版年．
+[2]（英）霭理士．性心理学[M]．潘光旦译．北京：商务印书馆，1997．
+
+% 古典文献 文史古籍类引文后加序号，再加圆括号，内加注书名、篇名
+
+% 论文集: [序号]编者．书名[标识码]．出版地：出版社，出版年．
+[3]伍蠡甫．西方论文选（下册）[C]．上海：上海译文出版社，1979．
+
+% 期刊文章: [序号]作者．篇名[标识码]．刊名，年，（期）．
+[4]叶朗．《红楼梦》的意蕴[J]．北京大学学报（哲学社会科学版），1989，（2）
+
+% 报纸文章: [序号]作者．篇名[标识码]．报纸名，出版日期（版次）
+[5]谢希德．创造学习的新思路[N]．人民日报，1998-12-25（10）
+
+% 外文文献: 要求外文文献所表达的信息和中文文献一样多，但文献类型标识码可以不标出。
+[6]Mansfeld, R.S. \& Busse. \textit{T.V. The Psychology of creativity and discovery}, Chinago：
+NelsonHall, 1981
+
+
+
+
+% \begingroup
+% \setstretch{2.0}    %行距2
+% \setlength{\bibsep}{0pt}    %段前段后0
+% \begin{adjustwidth}{0.42cm}{0.42cm} %左右缩进0.42cm
+% \bibliography{references}
+% \end{adjustwidth}
+% \endgroup
 
 \end{document}
