@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.6)  20 MAR 2023 17:59
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.6)  20 MAR 2023 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -773,7 +773,7 @@ Package ctex Warning: Command \CTEXsetup is deprecated.
 
 
 Package ctex Warning: Command \CTEXsetup is deprecated.
-(ctex)                \ctexset { subsubsection = { name={,、},number={\arabic
+(ctex)                \ctexset { subsubsection = { name={,.},number={\arabic
 (ctex)                {subsubsection}} } } is set.
 
 File: include_picture/xiaohui.png Graphic file (type bmp)
