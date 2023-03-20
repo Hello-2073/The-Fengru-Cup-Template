@@ -143,6 +143,12 @@ BoldItalicFont = times-new-roman-bold-italic.ttf
 
 
 %********************封面部分********************
+%
+%     论文题目：应准确、鲜明、简洁，能概括整个论文中最主要和最重要的内容。
+% 题目不超过20个中文字，若语意未尽，可用副标题补充说明。副标题应处于从属
+% 地位，一般可在题目的下一行用破折号“——”引出。论文题目应避免使用不常用缩
+% 略词、首字母缩写字、字符、代号和公式等。
+%
 \leftline{\includegraphics[scale=1]{include_picture/xiaohui.png}} % XSP 2023/3/3: 取消校徽段首缩进
 %格式控制部分
 % \par \  
@@ -317,22 +323,28 @@ Keywords are a set of words or terms selected from the text to reveal the subjec
 页眉用小五号宋体字，页眉标注从论文主体部分开始（引言或第一章）。
 请注意论文封面无页眉。
 
+\subsection{页码}
+论文页码从“主体部分（引言、正文、结论）”开始，直至“参考文献”结束，用五号阿
+拉伯数字连续编码，页码位于页脚居中。\textbf{封面、题名页不编页码。}
+
+摘要、目录、图标清单、主要符号表用五号小罗马数字连续编码，页码位于页脚居中。
+
 \subsection{图、表及其附注}
 图和表应安排在正文中第1次提及该图、表的文字的下方，当图或表不能安排在该页时，
 应安排在该页的下一页。
 
 \subsubsection{图}
-图题应明确简短，用五号宋体加粗，数字和字母为五号Times New Roman体加粗，图的编号
-与图题之间应空半角2格。图的编号与图题应置于图下方的居中位置。图内文字为5号宋体，
-数字和字母为5号Times New Roman体。曲线图的纵横坐标必须标注“量、标准规定符号、单位”，
-此三者只有在不必要注明（如无量刚等）的情况下方可省略。坐标上标注的量的符号和缩略词
-必须与正文中一致。
+图题应明确简短，\textbf{用五号宋体加粗}，数字和字母为\textbf{五号Times New Roman体
+加粗}，图的编号与图题之间应空半角2格。图的编号与图题应置于图下方的居中位置。图内文字
+为\textbf{5号宋体}，数字和字母为\textbf{5号Times New Roman体}。曲线图的纵横坐标必
+须标注“量、标准规定符号、单位”，此三者只有在不必要注明（如无量刚等）的情况下方可省略。
+坐标上标注的量的符号和缩略词必须与正文中一致。
 
 \subsubsection{表}
 表的标号应采用从1开始的阿拉伯数字编号，如：“表 1”、“表 2”、……。表编号应一直连续到附录
-之前，并与章、节和图的编号无关。只有一幅表，仍应标为“表 1”。表题应明确简短，用五号宋体
-加粗，数字和字母为五号Times New Roman体加粗，表的编号与表题之间应空半角2格。表的编号与
-表头应置于表上方的居中位置。表内文字为5号宋体，数字和字母为5号Times New Roman体。  
+之前，并与章、节和图的编号无关。只有一幅表，仍应标为“表 1”。表题应明确简短，用\textbf{五号宋体
+加粗}，数字和字母为\textbf{五号Times New Roman体加粗}，表的编号与表题之间应空半角2格。表的编号与
+表头应置于表上方的居中位置。表内文字为\textbf{5号宋体}，数字和字母为\textbf{5号Times New Roman体}。  
 
 \subsubsection{附注}
 图、表中若有附注时，附注各项的序号一律用“附注+阿拉伯数字+冒号”，如：“附注1：”。
@@ -348,14 +360,14 @@ Keywords are a set of words or terms selected from the text to reveal the subjec
 
 \section{理论与算法}
 
-此处插入一些公式示例：
+公式示例展示如下：
 \begin{align}
 \underset{{\bf I}_c \sim \boldsymbol\Im_c}{\mathrm{\text P}} \Big( \mathcal C({\bf I}_c) \neq \mathcal C({\bf I}_c + \boldsymbol \rho) \Big) \geq \delta ~~~\text{s.t.}~~||\boldsymbol\rho||_p \leq \xi,
 \label{eq:def1}
 \end{align}
 
 \section{实验结果}
-可加入实验环境、设计、图表展示、结果评估等内容
+图表示例展示如下：
 
 %插入一张图片
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
@@ -446,6 +458,8 @@ Keywords are a set of words or terms selected from the text to reveal the subjec
 \section*{结论}% section*生成无标号章节
 \addcontentsline{toc}{section}{结论} % 将无标号章节添加至目录
 论文的结论单独作为一章，但不加章号。
+
+注意: 文件大小不超过5M。
 
 \end{spacing}
 
