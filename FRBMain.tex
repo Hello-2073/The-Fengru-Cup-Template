@@ -83,12 +83,16 @@ BoldItalicFont = times-new-roman-bold-italic.ttf
 %********************页边距设置********************
 \geometry{left=3cm,right=2cm,top=2.5cm,bottom=2.5cm}
 \geometry{a4paper} % xsp 2023/3/7: 调整纸张大小为A4
-%页边距
 %********************页边距设置********************
+
+%********************段间距设置********************
+\newcommand{\setParDis}{\setlength {\parskip} {0pt} }
+%请在每部分使用这个
+%********************段间距设置********************
+
 %********************
 
 \begin{document}
-
 %********************页眉页脚设置********************
 \lhead{}%设置左页眉为空
 \rhead{}%设置左页眉为空
@@ -154,11 +158,11 @@ BoldItalicFont = times-new-roman-bold-italic.ttf
 \begin{spacing}{3}
     % \erhao
     \begin{center}
-        \zhongsong\erhao{第三十二届“冯如杯”竞赛主赛道项目论文} %黑体这样调用，其余字体同理
+        \zhongsong\erhao{第三十三届“冯如杯”竞赛主赛道项目论文模板} %黑体这样调用，其余字体同理
         
         % \zhongsong{“冯如杯”竞赛主赛道项目是什么}
     \end{center}
-    \rightline{\xinwei\sanhao{——“冯如杯”竞赛主赛道项目是什么}} % XSP 2023/3/3: 副标题二号华文新魏居右
+    \rightline{\xinwei\sanhao{——基于 Latex 的论文模板}} % XSP 2023/3/3: 副标题二号华文新魏居右
 \end{spacing}
 %格式控制部分
 % \par \ 
@@ -192,18 +196,41 @@ BoldItalicFont = times-new-roman-bold-italic.ttf
 \xiaosi
 \section*{摘要}
 \begin{spacing}{1.5}
-孔子在不经意间这样说过，知之者不如好之者，好之者不如乐之者。我希望诸位也能好好地体会这句话。 “冯如杯”竞赛主赛道项目是什么，发生了会如何，不发生又会如何。 而这些并不是完全重要，更加重要的问题是， 就我个人来说，“冯如杯”竞赛主赛道项目是什么对我的意义，不能不说非常重大。 既然如此， 现在，解决“冯如杯”竞赛主赛道项目是什么的问题，是非常非常重要的。 所以， 问题的关键究竟为何？ “冯如杯”竞赛主赛道项目是什么，到底应该如何实现。 现在，解决“冯如杯”竞赛主赛道项目是什么的问题，是非常非常重要的。 所以， 可是，即使是这样，“冯如杯”竞赛主赛道项目是什么的出现仍然代表了一定的意义。 培根在不经意间这样说过，深窥自己的心，而后发觉一切的奇迹在你自己。我希望诸位也能好好地体会这句话。 我认为， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。
+  \setParDis %设置段间距为 0
+  本Latex模板是北京航空航天大学大学第三十三届冯如杯科技竞赛论文模板, 由校团委科技部
+基于GitHub用户\textbf{\textit{Somedaywilldo}}与\textbf{\textit{cpfy}}的成果迭代
+开发而来。在此由衷感谢所有开发者对本模板的贡献与对冯如杯科技竞赛的大力支持。
+
+摘要内容包括：“摘要”字样，摘要正文，关键词。在摘要的最下方另起一行，用显著的字符注明文本的关键词。
+
+摘要是论文内容的简短陈述，应体现论文工作的核心思想。摘要一般约500字。摘要内容应涉及本项科研工作的目的和意义、研究思想和方法、研究成果和结论。
+
+关键词是为用户查找文献，从文中选取出来用来揭示全文主题内容的一组词语或术语，应尽量采用词表中的规范词（参照相应的技术术语标准）。关键词一般为3~8个，按词条的外延层次排列。关键词之间用逗号分开，最后一个关键词后不打标点符号。
+
 \end{spacing}
     
-\textbf{关键字：}人生，哲学，意义，价值，生命
+\textbf{关键词：}关键词1，关键词2，关键词3，关键词4，关键词5
 
 \newpage
 \section*{\textbf{Abstract}} % XSP 2023/3/8: Abstract 加粗
 \begin{spacing}{1.5}
 \begin{adjustwidth}{0.42cm}{0.42cm}
-\quad
-Confucius said in an offhand way that those who know are better than those who are good, and those who are good are better than those who are happy. I hope that you will also appreciate this saying. What is the main track of the "Fengru Cup" competition, what will happen if it happens, and what will happen if it does not. The more important issue is that, personally, what is the main track of the "Fengru Cup" competition means a lot to me. That being the case, it is very, very important for me to solve the question of what is the main track of the Fengru Cup. So, what is the key to the question? What is the main track of the "Fengru Cup" competition and how should it be realized? Now, it is very important to solve the question of what is the main track of the Fengru Cup. So, even so, the emergence of the main track of the "Fengru Cup" competition is still of some significance. Bacon said, "Look deep into your own heart and realize that the miracle is in you. I hope you all can also appreciate this statement. I think that I, too, have thought deeply about this question every day and night.\par
-\textbf{Keywords: Life, philosophy, meaning, value, life}
+  \setParDis %设置段间距为 0
+
+\qquad This Latex template for the 33rd Fengru Cup Competition of 
+Beihang University, is developed by the Science and Technology Department 
+of the University Committee iteratively based on the contribution of GitHub 
+users \textbf{\textit{Somedaywilldo}} and \textbf{\textit{cpfy}}. 
+Here, we would like to thank all the developers for their 
+contributions to this template and for their support of the Fengru Cup Competition.
+
+The abstract includes: the word "Abstract", the body of the abstract, and the keywords. On a separate line at the bottom of the abstract, indicate the key words of the text in prominent characters.
+
+The abstract is a short statement of the content of the paper and should reflect the core ideas of the paper work. The abstract is usually about 500 words. The abstract should cover the purpose and significance of this scientific work, research ideas and methods, research results and conclusions.
+
+Keywords are a set of words or terms selected from the text to reveal the subject content of the whole text for the user to find the literature, and the standardized words in the word list (refer to the corresponding technical terminology standards) should be used as much as possible. The keywords are usually 3 to 8, arranged according to the level of extensibility of the words. The keywords are separated by commas, and no punctuation marks are used after the last keyword.
+
+\textbf{Keywords: Keywords 1, Keywords 2, Keywords 3, Keywords 5, Keywords 6}
 \end{adjustwidth}
 \end{spacing}
 
@@ -224,46 +251,107 @@ Confucius said in an offhand way that those who know are better than those who a
 
 %********************正文页眉部分********************
 %\lhead{} 
-\chead{\xiaowu 北京航空航天大学第三十二届“冯如杯”竞赛主赛道参赛作品} %设置居中页眉
+\chead{\xiaowu 北京航空航天大学第三十三届“冯如杯”竞赛主赛道参赛作品} %设置居中页眉
 %********************正文页眉部分********************
 
 \pagenumbering{arabic} %正文页码从1开始，用阿拉伯数字
 \setcounter{page}{1} 
 
 \section{简介}
+\setParDis %设置段间距为 0
 \begin{spacing}{1.5}
-叔本华曾经提到过，意志是一个强壮的盲人，倚靠在明眼的跛子肩上。我希望诸位也能好好地体会这句话。 我们都知道，只要有意义，那么就必须慎重考虑。 可是，即使是这样，“冯如杯”竞赛主赛道项目是什么的出现仍然代表了一定的意义。 我们都知道，只要有意义，那么就必须慎重考虑。 现在，解决“冯如杯”竞赛主赛道项目是什么的问题，是非常非常重要的。 所以， 要想清楚，“冯如杯”竞赛主赛道项目是什么，到底是一种怎么样的存在。 对我个人而言，“冯如杯”竞赛主赛道项目是什么不仅仅是一个重大的事件，还可能会改变我的人生。\par
+  第三十三届“冯如杯”主赛道论文一律由在计算机上输入、排版、定稿后转成PDF格式，
+在集中申报时通过网络上传。论文封面及全文中不能出现作者姓名、学院、专业、指导老
+师的相关信息。包括5个部分, 顺序依次为: \par
+  % 段落间可加入\par进行换行，代替两行回车的写法
+  \begin{itemize}
+    \item 封面（中文）
+    \item 中文摘要、关键词(中文、英文)
+    \item 主体部分
+    \item 结论
+    \item 参考文献
+  \end{itemize}
 
-% 段落间可加入\par进行换行，代替两行回车的写法
+  引言部分需包括如下内容：
 
-本文的主要贡献如下：\par
-\begin{itemize}
-	\item 莎士比亚在不经意间这样说过，抛弃时间的人，时间也抛弃他
-	\item 易卜生曾经提到过，伟大的事业，需要决心，能力，组织和责任感
-	\item 文森特·皮尔在不经意间这样说过，改变你的想法，你就改变了自己的世界
-\end{itemize}
-	
+  \begin{itemize}
+    \item 阐述作品背景、创意来源；
+    \item 介绍并分析该领域国内外研究现状或解决方案，及其优缺点。
+  \end{itemize}
+
+  正文部分需包括如下内容：
+  \begin{itemize}
+    \item 作品核心创意，包含创意产生过程，核心思路描述等；
+    \item 创意可行性分析，包含技术实现思路，相关技术分析，预计技术难点等；
+    \item 作品或创意应用前景，包含应用场景，市场需求和推广模式等。。
+  \end{itemize}
+
+论文正文部分需分章节撰写，每章应另起一行。
+章节标题要突出重点，简明扼要、层次清晰。字数一般在15字以内，不得使用标点符号。标题中尽量不采用英文缩写词，对必须采用者，应使用本行业的通用缩写词。  层次以少为宜，根据实际需要选择。三级标题的层次按章（如“一、”）、节（如 “（一）”）、条（如“1.”）的格式编写，各章题序的阿拉伯数字用 Times New Roman 体。  
+
 \section{相关工作}
-可加入背景、相关工作的介绍
+本部分撰写背景、相关工作的介绍。使用时请替换以下论文的书写规范内容。
 
-\subsection{二级标题格式}
-\subsubsection{三级标题格式}
-未进行subsubsubsection四级及以上标题格式的设置\par
+\subsection{字体和字号}
+论文题目：二号，华文中宋体加粗，居中。
 
-此处是关于引用的参考~\cite{Squeez}，可从Google Scholar、DBLP等网站获取bibtex源格式~\cite{Goodfellow_2015}，粘贴至references.bib文件\cite{Xu_2017Squueze}中，之后在此处使用cite调用对应名称即可~\cite{Carlini_2016}\par
+副标题：三号，华文新魏，居右（可省略）。
+
+章标题：三号，黑体，居中。
+
+节标题：四号，黑体，居左。
+
+条标题：小四号，黑体，居左。
+
+正文：小四号，中文字体为宋体，西文字体为Times New Roman体，首行缩进，两端对齐。
+
+页码：五号Times New Roman 体，数字和字母\par
+
+\subsection{页边距及行距}
+学术论文的上边距：25mm；下边距：25mm；左边距：30mm；右边距 20mm。
+章、节、条三级标题为单倍行距，段前、段后各设为0.5行（即前后各空0.5行）。
+正文为 1.5 倍行距，段前、段后无空行（即空0行）。
+
+\subsection{页眉}
+页眉内容为北京航空航天大学第三十三届“冯如杯”竞赛创意赛道参赛作品，内容居中。
+页眉用小五号宋体字，页眉标注从论文主体部分开始（引言或第一章）。
+请注意论文封面无页眉。
+
+\subsection{图、表及其附注}
+图和表应安排在正文中第1次提及该图、表的文字的下方，当图或表不能安排在该页时，
+应安排在该页的下一页。
+
+\subsubsection{图}
+图题应明确简短，用五号宋体加粗，数字和字母为五号Times New Roman体加粗，图的编号
+与图题之间应空半角2格。图的编号与图题应置于图下方的居中位置。图内文字为5号宋体，
+数字和字母为5号Times New Roman体。曲线图的纵横坐标必须标注“量、标准规定符号、单位”，
+此三者只有在不必要注明（如无量刚等）的情况下方可省略。坐标上标注的量的符号和缩略词
+必须与正文中一致。
+
+\subsubsection{表}
+表的标号应采用从1开始的阿拉伯数字编号，如：“表 1”、“表 2”、……。表编号应一直连续到附录
+之前，并与章、节和图的编号无关。只有一幅表，仍应标为“表 1”。表题应明确简短，用五号宋体
+加粗，数字和字母为五号Times New Roman体加粗，表的编号与表题之间应空半角2格。表的编号与
+表头应置于表上方的居中位置。表内文字为5号宋体，数字和字母为5号Times New Roman体。  
+
+\subsubsection{附注}
+图、表中若有附注时，附注各项的序号一律用“附注+阿拉伯数字+冒号”，如：“附注1：”。
+
+附注写在图、表的下方，一般采用5号宋体。
+
+\subsubsection{参考文献}
+凡有直接引用他人成果（文字、数字、事实以及转述他人的观点）之处，均应加标注说明列于参考文献中，
+以避免论文抄袭现象的发生。
+
+标注格式：引用参考文献标注方式应全文统一，标注的格式为[序号]，放在引文或转述观点的最后
+一个句号之前，所引文献序号用小4号Times New Roman体、以上角标形式置于方括号中，如“……成果”$^{[1]}$。
 
 \section{理论与算法}
 
-此处插入一些公式
+此处插入一些公式示例：
 \begin{align}
 \underset{{\bf I}_c \sim \boldsymbol\Im_c}{\mathrm{\text P}} \Big( \mathcal C({\bf I}_c) \neq \mathcal C({\bf I}_c + \boldsymbol \rho) \Big) \geq \delta ~~~\text{s.t.}~~||\boldsymbol\rho||_p \leq \xi,
 \label{eq:def1}
-\end{align}
-
-再插入一些公式
-\begin{align}
-{\bf I}_{\boldsymbol\rho}^{i + 1} = \text{Clip}_{\epsilon} \left \{ {\bf I}_{\boldsymbol\rho}^i + \alpha~\text{sign} (\nabla \mathcal J(\boldsymbol\theta, {\bf I}_{\boldsymbol\rho}^i, \ell) \right \},
-\label{eq:BIM}
 \end{align}
 
 \section{实验结果}
@@ -326,53 +414,46 @@ Confucius said in an offhand way that those who know are better than those who a
 
 \begin{table*}[t]
 \centering
-\caption{这是一个表注示例}
+\caption{表格使用示例}
 \begin{tabular}{|l||c|c|c|c|c|c|}
 \hline
- {\textbf{攻击方法}}  &  定向/非定向 	   & 特定/通用 	       & 扰动范数                         & 学习方式 		& 攻击强度  \\ \hline\hline
-L-BFGS~ 		          & Targeted				& Image specific		& $\ell_{\infty}$ 	              & One shot		& $***$	\\ \hline
-FGSM~		              & Targeted				& Image specific		& $\ell_{\infty}$	                & One shot		& $***$ \\ \hline
-BIM \& ILCM~          & Non targeted		& Image specific		& $\ell_{\infty}$	                & Iterative		& $**$$**$ 	\\ \hline
-JSMA~		              & Targeted				& Image specific		& $\ell_{0}$	                    & Iterative		& $***$ 	\\ \hline
-One-pixel~	          & Non Targeted		& Image specific		& $\ell_0$		                    & Iterative	  & $**$ \\ \hline
-C\&W attacks~         & Targeted	      &	Image specific		&	$\ell_0, \ell_2, \ell_{\infty}$	&	Iterative   & $*****$ \\ \hline
-DeepFool~             & Non targeted		& Image specific		& $\ell_2, \ell_{\infty}$	        & Iterative	  & $**$$**$ \\ \hline
-Uni. perturbations~   & Non targeted    & Universal         &	$\ell_2, \ell_{\infty}$         & Iterative   & $*****$ \\ \hline
-UPSET~                & Targeted		    & Universal 	      &  $\ell_{\infty}$                & Iterative   & $**$$**$ \\ \hline
-ANGRI~                & Targeted		    & Image specific	  & $\ell_{\infty}$                 &	Iterative   & $**$$**$ \\ \hline
-Houdini~              & Targeted		    & Image specific	  & $\ell_2, \ell_{\infty}$         & Iterative   & $**$$**$ \\ \hline
-ATNs~                 & Targeted		    & Image specific	  & $\ell_{\infty}$                 & Iterative   & $**$$**$ \\ \hline
+{\textbf{表头 1}}     &  表头 2 	    & 表头 3 	  & 表头 4     & 表头 5 		\\ \hline\hline
+内容 11 		          & 内容 12				& 内容 13		& 内容 14 	 & 内容 15		\\ \hline
+内容 21	              & 内容 22				& 内容 23		& 内容 24	   & 内容 25		\\ \hline
+
+
 \end{tabular}
 \end{table*}
 
+
 %再插入另一种表格
 \begin{table}[H]
-\caption{我们的准确率真是太高啦}
+\caption{三线表使用示例}
 \centering
 \begin{tabular}{ccccc}
 \hline  
-\textbf{method} & \textbf{WR} & \textbf{FR} & \textbf{err} & \textbf{top} \\ 
+\textbf{方法} & \textbf{表头 1} & \textbf{表头 2} & \textbf{表头 3} & \textbf{表头 4} \\ 
 \hline  
-方法1 & 92.00\% & 2.00 & 19.07  & 5.66\\
-方法2 & 99.00\%   & 9.76  & 18.94 & 7.83\\
-方法3 & 96.00\%   & 1.01  & 24.09  & 9.08\\
-方法4 & 99.99\%   & 4.66  & 40.69 & 4.21\\
+方法1 & 数据  & 数据  & 数据  & 数据\\
+方法2 & 数据  & 数据  & 数据  & 数据\\
 \hline
 \end{tabular} 
 \end{table} 
 
 \section{前景与展望}
-本届赛制改革，合并科技、创业两类，可加入一些与商业相关的内容
+第三十二届起“冯如杯”赛制改革，合并科技、创业两类，可加入一些与创业计划相关的内容。
 
-\section{结论}
-关于结论
+\section*{结论}% section*生成无标号章节
+\addcontentsline{toc}{section}{结论} % 将无标号章节添加至目录
+论文的结论单独作为一章，但不加章号。
 
 \end{spacing}
 
 \newpage
 
 % XSP 2023/3/16: bib支持不全，暂时改为手动
-\section*{参考文献}
+\section*{参考文献} % section*生成无标号章节题目
+\addcontentsline{toc}{section}{参考文献} % 将无标号章节添加至目录
 % 著作: [序号]作者．书名[标识码]．出版地：出版社，出版年．
 [1]张志建．严复思想研究[M]．桂林：广西师范大学出版社，1989． 
 

@@ -6,10 +6,17 @@
 \ttl@change@v {subsubsection}{}{}{}\relax 
 \contentsline {section}{\numberline {一、}简介}{1}%
 \contentsline {section}{\numberline {二、}相关工作}{1}%
-\contentsline {subsection}{\numberline {（一）}二级标题格式}{1}%
-\contentsline {subsubsection}{\numberline {1、}三级标题格式}{1}%
-\contentsline {section}{\numberline {三、}理论与算法}{2}%
-\contentsline {section}{\numberline {四、}实验结果}{2}%
-\contentsline {section}{\numberline {五、}前景与展望}{4}%
-\contentsline {section}{\numberline {六、}结论}{4}%
+\contentsline {subsection}{\numberline {（一）}字体和字号}{2}%
+\contentsline {subsection}{\numberline {（二）}页边距及行距}{2}%
+\contentsline {subsection}{\numberline {（三）}页眉}{2}%
+\contentsline {subsection}{\numberline {（四）}图、表及其附注}{2}%
+\contentsline {subsubsection}{\numberline {1、}图}{2}%
+\contentsline {subsubsection}{\numberline {2、}表}{2}%
+\contentsline {subsubsection}{\numberline {3、}附注}{3}%
+\contentsline {subsubsection}{\numberline {4、}参考文献}{3}%
+\contentsline {section}{\numberline {三、}理论与算法}{3}%
+\contentsline {section}{\numberline {四、}实验结果}{3}%
+\contentsline {section}{\numberline {五、}前景与展望}{6}%
+\contentsline {section}{结论}{6}%
+\contentsline {section}{参考文献}{7}%
 \contentsfinish 
