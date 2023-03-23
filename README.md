@@ -7,6 +7,9 @@
 
 本模板第二版本来源于[此仓库](https://github.com/cpfy/FRB_template.git)，作者 cpfy 针对第三十二届赛制格式要求做出了多处适配与调整。
 
+## 使用方法
+本模板主文件为FRBTemplate.tex，请使用XeLatex编译。
+
 
 ## 本版本更新内容（2023年3月20日）
 * 全局
