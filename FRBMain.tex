@@ -41,8 +41,8 @@
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareCaptionLabelSeparator{mysep}{\space\space}  %自定义caption格式
-\captionsetup[figure]{labelfont=bf, labelsep=mysep, textfont=bf}   %图片caption格式
-\captionsetup[table]{labelfont=bf, labelsep=mysep, textfont={bf}}   %表格caption格式
+\captionsetup[figure]{font={small}, labelfont=bf, labelsep=mysep, textfont=bf}   %图片caption格式
+\captionsetup[table]{font={small}, labelfont=bf, labelsep=mysep, textfont={bf}}   %表格caption格式
 \bibliographystyle{gbt7714-numerical} %修改了title斜体内容
 
 %********************导言区宏包引入********************
@@ -164,8 +164,10 @@ BoldItalicFont = times-new-roman-bold-italic.ttf
 \begin{spacing}{3}
     % \erhao
     \begin{center}
-        \zhongsong\erhao{第三十三届“冯如杯”竞赛主赛道项目论文模板} %黑体这样调用，其余字体同理
-        
+      {
+        \fontsize{22pt}{3}\selectfont
+        \zhongsong{第三十三届“冯如杯”竞赛主赛道项目论文Latex模板} %黑体这样调用，其余字体同理
+      } 
         % \zhongsong{“冯如杯”竞赛主赛道项目是什么}
     \end{center}
     \rightline{\xinwei\sanhao{——基于 Latex 的论文模板}} % XSP 2023/3/3: 副标题二号华文新魏居右
@@ -410,6 +412,7 @@ Keywords are a set of words or terms selected from the text to reveal the subjec
 %插入一个表格
 
 \begin{table*}[t]
+\small
 \centering
 \caption{表格使用示例}
 \begin{tabular}{|l||c|c|c|c|c|c|}
@@ -417,25 +420,27 @@ Keywords are a set of words or terms selected from the text to reveal the subjec
 {\textbf{表头 1}}     &  表头 2 	    & 表头 3 	  & 表头 4     & 表头 5 		\\ \hline\hline
 内容 11 		          & 内容 12				& 内容 13		& 内容 14 	 & 内容 15		\\ \hline
 内容 21	              & 内容 22				& 内容 23		& 内容 24	   & 内容 25		\\ \hline
-
-
 \end{tabular}
 \end{table*}
 
 
 %再插入另一种表格
 \begin{table}[H]
-\caption{三线表使用示例}
+\small
+\caption{样本描述性统计结果（N=34315）}
 \centering
-\begin{tabular}{ccccc}
+\begin{tabular}{cccccc}
 \hline  
-\textbf{方法} & \textbf{表头 1} & \textbf{表头 2} & \textbf{表头 3} & \textbf{表头 4} \\ 
+\textbf{变量名} & \textbf{含义} & \textbf{不具有数量} & \textbf{不具有比例} & \textbf{具有数量} & \textbf{具有比例} \\ 
 \hline  
-方法1 & 数据  & 数据  & 数据  & 数据\\
-方法2 & 数据  & 数据  & 数据  & 数据\\
+方法1 & 互动视频  & 数据  & 数据  & 数据 & 1\\
+方法2 & 合作共创  & 数据  & 数据  & 数据 & 1\\
+方法2 & 生活性    & 数据  & 数据  & 数据 & 1\\
+方法2 & 趣味性    & 数据  & 数据  & 数据 & 1\\
+方法2 & 热点性    & 数据  & 数据  & 数据 & 1\\
 \hline
 \end{tabular} 
-\end{table} 
+\end{table}
 
 \section*{结论}% section*生成无标号章节
 \addcontentsline{toc}{section}{结论} % 将无标号章节添加至目录
